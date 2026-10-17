@@ -96,7 +96,7 @@ def do_test_phase(exp, gdir, tag):
               "evaluated_windows": len(arrays[0]),
               "expected_windows": len(data),
               "per_step": per_step}
-    if len(arrays[0]) != len(data):
+    if not exp.cfg.max_eval_batches and len(arrays[0]) != len(data):
         raise ValueError("test coverage %d != %d" % (len(arrays[0]), len(data)))
     (gdir / ("test_metrics_%s.json" % tag)).write_text(
         json.dumps(result, indent=2))
