@@ -1,0 +1,604 @@
+{
+  "protocol": "timemmd_common_801010_v1",
+  "orig_row_convention": "0-based data row in the original unsorted raw CSV (header excluded)",
+  "domains": {
+    "Agriculture": {
+      "columns": [
+        "Date",
+        "Wholesale broiler composite",
+        "OT",
+        "Retail-wholesale spread for broiler composite",
+        "date",
+        "start_date",
+        "end_date",
+        "prior_history_avg",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 496,
+      "L": 192,
+      "H": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "freq": "ME",
+      "timef_dim": 1,
+      "n_train": 396,
+      "val_end": 447,
+      "n_test": 49,
+      "window_counts": {
+        "6": {
+          "train": 199,
+          "val": 46,
+          "test": 44
+        },
+        "8": {
+          "train": 197,
+          "val": 44,
+          "test": 42
+        },
+        "10": {
+          "train": 195,
+          "val": 42,
+          "test": 40
+        },
+        "12": {
+          "train": 193,
+          "val": 40,
+          "test": 38
+        }
+      },
+      "fact_filled": 95,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "41203f1af2c4fd9f3207ec286f0a1462df146b5ae8b6d9cdcec6cb569c57a0be"
+    },
+    "Climate": {
+      "columns": [
+        "Date",
+        "OT",
+        "Anomaly",
+        "start_date",
+        "end_date",
+        "date",
+        "prior_history_avg",
+        "prior_history_std",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 496,
+      "L": 192,
+      "H": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "freq": "ME",
+      "timef_dim": 1,
+      "n_train": 396,
+      "val_end": 447,
+      "n_test": 49,
+      "window_counts": {
+        "6": {
+          "train": 199,
+          "val": 46,
+          "test": 44
+        },
+        "8": {
+          "train": 197,
+          "val": 44,
+          "test": 42
+        },
+        "10": {
+          "train": 195,
+          "val": 42,
+          "test": 40
+        },
+        "12": {
+          "train": 193,
+          "val": 40,
+          "test": 38
+        }
+      },
+      "fact_filled": 0,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "4096994d5e8691de404b15d16ab9e2a98d69b03eb1d4eafa4283ea44ead0e51b"
+    },
+    "Economy": {
+      "columns": [
+        "Month",
+        "Exports",
+        "Imports",
+        "OT",
+        "start_date",
+        "date",
+        "end_date",
+        "prior_history_avg",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 423,
+      "L": 192,
+      "H": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "freq": "ME",
+      "timef_dim": 1,
+      "n_train": 338,
+      "val_end": 381,
+      "n_test": 42,
+      "window_counts": {
+        "6": {
+          "train": 141,
+          "val": 38,
+          "test": 37
+        },
+        "8": {
+          "train": 139,
+          "val": 36,
+          "test": 35
+        },
+        "10": {
+          "train": 137,
+          "val": 34,
+          "test": 33
+        },
+        "12": {
+          "train": 135,
+          "val": 32,
+          "test": 31
+        }
+      },
+      "fact_filled": 0,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "c35325f0181a426a78c35b9172d8908f64639796a535c5fdc8b082b538030e5d"
+    },
+    "Energy": {
+      "columns": [
+        "date",
+        "OT",
+        "Weekly East Coast All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "Weekly New England (PADD 1A) All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "Weekly Central Atlantic (PADD 1B) All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "Weekly Lower Atlantic (PADD 1C) All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "Weekly Midwest All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "Weekly Gulf Coast All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "Weekly Rocky Mountain All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "Weekly West Coast All Grades All Formulations Retail Gasoline Prices  (Dollars per Gallon)",
+        "start_date",
+        "end_date",
+        "prior_history_avg",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 1479,
+      "L": 1056,
+      "H": [
+        12,
+        24,
+        36,
+        48
+      ],
+      "freq": "W",
+      "timef_dim": 2,
+      "n_train": 1183,
+      "val_end": 1332,
+      "n_test": 147,
+      "window_counts": {
+        "12": {
+          "train": 116,
+          "val": 138,
+          "test": 136
+        },
+        "24": {
+          "train": 104,
+          "val": 126,
+          "test": 124
+        },
+        "36": {
+          "train": 92,
+          "val": 114,
+          "test": 112
+        },
+        "48": {
+          "train": 80,
+          "val": 102,
+          "test": 100
+        }
+      },
+      "fact_filled": 1,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "fdef4b4f58ab319656b60e49c96d1dc4158d2c5b17467456d4d12d746ff55cd5"
+    },
+    "Environment": {
+      "columns": [
+        "CBSA",
+        "CBSA Code",
+        "date",
+        "OT",
+        "Category",
+        "Defining Parameter",
+        "Defining Site",
+        "Number of Sites Reporting",
+        "start_date",
+        "end_date",
+        "prior_history_avg",
+        "prior_history_std",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 15248,
+      "L": 528,
+      "H": [
+        48,
+        96,
+        192,
+        336
+      ],
+      "freq": "D",
+      "timef_dim": 3,
+      "n_train": 12198,
+      "val_end": 13724,
+      "n_test": 1524,
+      "window_counts": {
+        "48": {
+          "train": 11623,
+          "val": 1479,
+          "test": 1477
+        },
+        "96": {
+          "train": 11575,
+          "val": 1431,
+          "test": 1429
+        },
+        "192": {
+          "train": 11479,
+          "val": 1335,
+          "test": 1333
+        },
+        "336": {
+          "train": 11335,
+          "val": 1191,
+          "test": 1189
+        }
+      },
+      "fact_filled": 234,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "3bcda88e0831294678d412807fa2eac2022c5665a9f1f044cd23cff65657a0d6"
+    },
+    "Health": {
+      "columns": [
+        "date",
+        "start_date",
+        "end_date",
+        "REGION TYPE",
+        "REGION",
+        "YEAR",
+        "WEEK",
+        "% WEIGHTED ILI",
+        "OT",
+        "AGE 0-4",
+        "AGE 25-49",
+        "AGE 25-64",
+        "AGE 5-24",
+        "AGE 50-64",
+        "AGE 65",
+        "ILITOTAL",
+        "NUM. OF PROVIDERS",
+        "TOTAL PATIENTS",
+        "YEAR_WEEK",
+        "prior_history_avg",
+        "prior_history_std",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date_fixed",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 1389,
+      "L": 96,
+      "H": [
+        12,
+        24,
+        36,
+        48
+      ],
+      "freq": "W",
+      "timef_dim": 2,
+      "n_train": 1111,
+      "val_end": 1251,
+      "n_test": 138,
+      "window_counts": {
+        "12": {
+          "train": 1004,
+          "val": 129,
+          "test": 127
+        },
+        "24": {
+          "train": 992,
+          "val": 117,
+          "test": 115
+        },
+        "36": {
+          "train": 980,
+          "val": 105,
+          "test": 103
+        },
+        "48": {
+          "train": 968,
+          "val": 93,
+          "test": 91
+        }
+      },
+      "fact_filled": 2,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "88a81d443533991b8e2b55da8db0a6496d68fc510077b1c0f568d6f186394cf8"
+    },
+    "Security": {
+      "columns": [
+        "date",
+        "OT",
+        "start_date",
+        "end_date",
+        "prior_history_avg",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 297,
+      "L": 220,
+      "H": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "freq": "ME",
+      "timef_dim": 1,
+      "n_train": 237,
+      "val_end": 268,
+      "n_test": 29,
+      "window_counts": {
+        "6": {
+          "train": 12,
+          "val": 26,
+          "test": 24
+        },
+        "8": {
+          "train": 10,
+          "val": 24,
+          "test": 22
+        },
+        "10": {
+          "train": 8,
+          "val": 22,
+          "test": 20
+        },
+        "12": {
+          "train": 6,
+          "val": 20,
+          "test": 18
+        }
+      },
+      "fact_filled": 0,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "adea376a0e6858979b2d42cde6f3901d7d60639bb78cd64eec6f58e2e85ed23c"
+    },
+    "SocialGood": {
+      "columns": [
+        "date",
+        "start_date",
+        "end_date",
+        "OT",
+        "prior_history_avg",
+        "prior_history_std",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 892,
+      "L": 192,
+      "H": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "freq": "ME",
+      "timef_dim": 1,
+      "n_train": 713,
+      "val_end": 803,
+      "n_test": 89,
+      "window_counts": {
+        "6": {
+          "train": 516,
+          "val": 85,
+          "test": 84
+        },
+        "8": {
+          "train": 514,
+          "val": 83,
+          "test": 82
+        },
+        "10": {
+          "train": 512,
+          "val": 81,
+          "test": 80
+        },
+        "12": {
+          "train": 510,
+          "val": 79,
+          "test": 78
+        }
+      },
+      "fact_filled": 360,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "a6f25ea421d1e74b9c7aa29b0119c2dcd49bcd5b6c266ab7cd4ba498a5f814cf"
+    },
+    "Traffic": {
+      "columns": [
+        "OT",
+        "Date",
+        "start_date",
+        "date",
+        "end_date",
+        "prior_history_avg",
+        "prior_history_std",
+        "fact",
+        "preds"
+      ],
+      "field_map": {
+        "date": "date",
+        "target": "OT",
+        "fact": "fact",
+        "prior": "prior_history_avg"
+      },
+      "N": 531,
+      "L": 96,
+      "H": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "freq": "ME",
+      "timef_dim": 1,
+      "n_train": 424,
+      "val_end": 478,
+      "n_test": 53,
+      "window_counts": {
+        "6": {
+          "train": 323,
+          "val": 49,
+          "test": 48
+        },
+        "8": {
+          "train": 321,
+          "val": 47,
+          "test": 46
+        },
+        "10": {
+          "train": 319,
+          "val": 45,
+          "test": 44
+        },
+        "12": {
+          "train": 317,
+          "val": 43,
+          "test": 42
+        }
+      },
+      "fact_filled": 0,
+      "prior_history_avg_empty": 0,
+      "raw_csv_sha256": "82439ff69196789968f48245d8bce699ac09a566f24f027dabd6b99333417311"
+    }
+  },
+  "files_sha256": {
+    "Agriculture.csv": "f980d86556959d849c84a91c3fa13415cf7714b56d13205ac6c24032cdb46a82",
+    "Climate.csv": "9a68b580650a141ec474f0363a98f95f4e5593d6a850fcc2dcdadfea28d42e43",
+    "Economy.csv": "fc20dc322538e59d3c2af39c19b7464f7119ec47487d7ac9fec319527bc3fabf",
+    "Energy.csv": "1a357cd2d35d121e549883dd07bb1ad2c8368ae684568be0d56e8fe93045147e",
+    "Environment.csv": "2da96b9ea82e8bbae71f9dd614e3b6b3faf0c9336c3721de72ebc25f2e75b803",
+    "Health.csv": "9f52ea7b984e560e3ff872e874d057be22c40079e7326a0613231d029549d46f",
+    "Security.csv": "034864bd280857f4c41de8ce7c77a61b077ffc7b139ea547094b76871e0c4add",
+    "SocialGood.csv": "80278357d2794468bc6020ba04a04c666024d0936c780bff2cd4da1abb054cd5",
+    "Traffic.csv": "5cb933d36049b705eab4a5652d3d73b010c3de86fe3a9cc1e24524cab6dedf26",
+    "health_date_fix_map.csv": "5800552172dddfe634f9aa70bdb0cc6a8d01e75ae3e7fcb51bc229105d9de9e3",
+    "scaler.json": "cb11b98be8d76899f2bec6a02eb755d5d4fb2736046113eda1ea977b7797ae1c",
+    "splits.json": "a29f83a0ff4a81862cb3325608328af54427e1661ea2ca249dbafd5daaa69f0c",
+    "windows/Agriculture_H10.csv": "e163f17bf41cd1e6bdb4680d1bf7b606025b402616b990c75dbb8a4ff88bcfe9",
+    "windows/Agriculture_H12.csv": "26c43c7f828ab151e1ee68e88f06cd7908c12ee88e3151f24366f48ac697b31d",
+    "windows/Agriculture_H6.csv": "c833439fb2393c27c1db5862a072648ffe512d4506ccb353b3cee765b8ca9234",
+    "windows/Agriculture_H8.csv": "e986d72d91b1b60f9f3a9ce9c8a155cdc6e84ae989dbd379887c9d11603193c1",
+    "windows/Climate_H10.csv": "075f332259ac3fbaf168fbba502386013826bebe1b76bb13828225acc356f0c0",
+    "windows/Climate_H12.csv": "86dfb5f53055a82a8887fe565a15dd0f7dd6fb98ebc44c0b96d54730b59fa688",
+    "windows/Climate_H6.csv": "ef914e2239f2e8fd22b0f2903a67922588fdf76fdf77b2cefc92d9012ae4a63c",
+    "windows/Climate_H8.csv": "5ac4b414f2224108e0e84d231550a7e05613a0aeb32db7f18aca1e169d868ff0",
+    "windows/Economy_H10.csv": "a6377d9c2b86c1d6f67bf0c42be643589d6477ef78aee9db64d4575d86be508d",
+    "windows/Economy_H12.csv": "94b1960c6b9f92c21c1d3f2e5a47c6535982a4817ab2427d1e6c92bfe7fe77cd",
+    "windows/Economy_H6.csv": "4d8a1dec2bf7f3ffa01a0fb67d4976f39123470ba2cc2251d97b7682436a99da",
+    "windows/Economy_H8.csv": "a21aa5212f27877b38f9b02dcbe8d7c68504025224c165254b814ff50a336fa0",
+    "windows/Energy_H12.csv": "a4c5a93eab5a903e6ada3b8b9f8e88e19b4c0471302524df007cf9444698ff3d",
+    "windows/Energy_H24.csv": "b566fc7399870953dc0c0c4c576a3fad7fe7ffc3accef160720903d97a148a99",
+    "windows/Energy_H36.csv": "12e4d987381e8918042e3be40e0be73b82f39219058d3628845d506cc2ef2d24",
+    "windows/Energy_H48.csv": "41e9dfd51fecc6a88fcd10fc2d34f0fe9663b345c58e5e2db46c6f6f2c1df8a9",
+    "windows/Environment_H192.csv": "ace9faa56ee7d17c911503693b08145fe6774466735cc28fdcae5dfb0ff6954a",
+    "windows/Environment_H336.csv": "dbb82396ffa122c9522ee6556e69e9b0c6be6ed31bd25d772badf999fce24f4e",
+    "windows/Environment_H48.csv": "b86c95d33515b8836afa583bb32361f5d5a116165dfe4b0d3f82b491401b1948",
+    "windows/Environment_H96.csv": "2bfda1e6aa4016cf683e352e3aea0024650a6cce488384d310ff53235f41fd7d",
+    "windows/Health_H12.csv": "7ca4e5474b9270c6af07bcbdd38ef096afc3bff8afc0419cfe650c0349a133ab",
+    "windows/Health_H24.csv": "6de197387622b7c0776d7f3293d72076f93a270736a192d7e9e9ee3275070936",
+    "windows/Health_H36.csv": "6acac3f76a8af91896df25ab523ed756acbdb2b6e1699ae63648ce15fe20eba6",
+    "windows/Health_H48.csv": "fab83c77c25dbb6c6f4931d35f8334892bef840789c3ce1d0e7810b78daf3161",
+    "windows/Security_H10.csv": "2f13825d043268f5912abd9cb3d9a55702bd0c9e3a6dbe1b4b3377a7410b229e",
+    "windows/Security_H12.csv": "7370e40f262b5c71aadc1d9aefb5a2a1e89abddfaa1cffeedb58f9c23f64df43",
+    "windows/Security_H6.csv": "38c0243baedd06bfeef7636c5f6762978769a24f2c1f08ba110b99aa0329d668",
+    "windows/Security_H8.csv": "ffda0d59425f25fab2c9d3b00283b4f5b865654c7f21d862d393b93edbd93a4c",
+    "windows/SocialGood_H10.csv": "5dc81033bb2eb047e5a678ec2ab8afc8148c3cf58bd2bbceba8474d484d828dd",
+    "windows/SocialGood_H12.csv": "971b0885b27108c56c84b375500c12d0d6a80ce681c06515a1e48c4d65fd483c",
+    "windows/SocialGood_H6.csv": "5d32fbe38bc2c8fb9ffd6e87ffc97f34ca46d933f8fda8996ed29c7c259a74fc",
+    "windows/SocialGood_H8.csv": "4803c5b72706cf7dc714545e0f9547a630e2b0374192f9d37166d49a5ae5b4da",
+    "windows/Traffic_H10.csv": "ef6654a5503c66846ad38c9116f173ba990e662e1b48acce0b911c8592736eca",
+    "windows/Traffic_H12.csv": "c62df3e5b24abe61feaeaa23d6d842188c663d42a202ae6d5f8fc3bbca18ae87",
+    "windows/Traffic_H6.csv": "cd9bcdfe5770cf2b4bff1df8c6e95e9282cb3451bd8bfceb8979bdca08934b10",
+    "windows/Traffic_H8.csv": "e2c7db74441cdd8a0bbd1b19c2db85d003ef134ce69a345159b78880e36e5e1d",
+    "economy_frozen_evidence/Economy_frozen_sorted.csv": "023292b969b915a73185e047debfb18f5572544f9463b23e64e9f496a0b52b26",
+    "economy_frozen_evidence/Economy_original.csv": "c35325f0181a426a78c35b9172d8908f64639796a535c5fdc8b082b538030e5d",
+    "economy_frozen_evidence/sort_mapping.csv": "43c3fd29f6275eb346066c2d3d6e2182f4f174bfd9d8bd6c6ab75d0492cc74b2"
+  },
+  "raw_dir": "/home/wlt/MMTS/data/TimeMMD",
+  "economy_frozen_expected_sha256": {
+    "Economy_frozen_sorted.csv": "023292b969b915a73185e047debfb18f5572544f9463b23e64e9f496a0b52b26",
+    "sort_mapping.csv": "43c3fd29f6275eb346066c2d3d6e2182f4f174bfd9d8bd6c6ab75d0492cc74b2",
+    "Economy_original.csv": "c35325f0181a426a78c35b9172d8908f64639796a535c5fdc8b082b538030e5d"
+  },
+  "economy_inversions_raw": 35
+}
